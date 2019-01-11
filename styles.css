@@ -111,11 +111,7 @@ h1, h2{
     color: white;
 }
 
-#add-book:after{
-    content: '';
-    display: block;
-    clear: both;
-}
+
 
 
 
