@@ -1,9 +1,9 @@
-const bookList = document.querySelector('#book-list ')
+var btns = document.querySelectorAll('#book-list .delete')
 
-console.log('the next sibling node is:', bookList.nextSibling)
-console.log('the next sibling element node is:', bookList.nextElementSibling)
+Array.from(btns).forEach(function (btn) {
+  btn.addEventListener('click', function (e) {
+    const li = e.target.parentElement;
 
-console.log('book-list previous sibiling is:', bookList.previousSibling)
-console.log('the previous sibiling element node is:', bookList.previousElementSibling)
-
-console.log('the previous sibiling2 element node is:', bookList.previousElementSibling.querySelector('p').innerHTML += '<br> Too cool for everyone else!')
+    li.parentNode.removeChild(li)
+  });
+});
