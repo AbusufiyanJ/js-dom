@@ -8,6 +8,11 @@ body{
 h1, h2{
     font-weight: normal;
     cursor: pointer;
+    color: black;
+}
+
+h1:hover{
+    color: green;
 }
 
 #wrapper{
@@ -77,9 +82,10 @@ h1, h2{
 }
 
 .link{
+    position: relative;
+    left: 44.5%;
     display: inline-block;
-    padding: 10px 20px;
-    padding: 10px;
+    padding: 6px;
     border: 1px solid black;
     background: aqua;
     border-radius: 14px;
